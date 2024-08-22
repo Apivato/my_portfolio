@@ -1,6 +1,6 @@
 # How I worked on this project
 
-My Goal was to simualte a professional working environment using:
+My Goal was to simulate a professional working environment using:
 
 - App was built following a figma design
 - Tasks were created and followed on project board
@@ -8,7 +8,8 @@ My Goal was to simualte a professional working environment using:
 
 # How to navigate this project
 
-This project is a 
+This project is a react based web app with tailwind handling the stylings
+the source code can be found in Src while the assets used are in the assets directory.
 
 # Why I built the project this way
 
@@ -18,4 +19,9 @@ This project is a
 
 # If I had more time I would change this
 
+- I would like to add more creative things to look at, either in the background or in the design of the layout
+- I would change the color pallete to be more pleasing to the eyes and calming
+
 # Available Scripts
+
+- npm start
