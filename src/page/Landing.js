@@ -9,7 +9,7 @@ export default class Landing extends Component {
             <div className='wrapper'>
                 <Navbar/>
                 <div className='body text-[#81CFE0] text-6xl py-10 pl-48'>
-                    <div className='header'>
+                    <div className='header font-bold'>
                         Hi, my name is Amos Anthony Pivato
                         <hr className="my-8 mx-16 border-2 border-[#81CFE0]"></hr>
                     </div>
