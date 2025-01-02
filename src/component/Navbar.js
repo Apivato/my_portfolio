@@ -1,8 +1,9 @@
 import { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import MyLogo from '../Assets/logo1.png';
+// import MyLogo from '../Assets/logo1.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import SVGComponentMyLogo from './MyLogo.js'
 
 export default class Navbar extends Component {
 
@@ -23,19 +24,19 @@ export default class Navbar extends Component {
                         </svg>
                 </button>
                 <nav id='sidebar' className="invisible lg:visible sm: md: lg: xl: 2xl: page-navigation fixed flex flex-col flex-grow h-screen max-h-screen overflow-y-auto bg-[#4D102B] text-[#D2D7D3]">
-                    <NavLink to="/" className="page-navigation-header my-9 mx-6" >
-                        <img className="w-24 h-15" src={MyLogo} alt="Logo" width="" height="" />
+                    <NavLink to="/" className="page-navigation-header my-8 mx-3" >
+                        <SVGComponentMyLogo className=""/>
                     </NavLink>
-                    <NavLink to="/About" className="page-navigation-item my-14 ]">
+                    <NavLink to="/About" className="page-navigation-item">
                         ABOUT
                     </NavLink>
-                    <NavLink to="/Experience" className="page-navigation-item">
+                    <NavLink to="/Experience" className="page-navigation-item my-14">
                         EXPERIENCE
                     </NavLink>
-                    <NavLink to="/Projects" className="page-navigation-item my-14">
+                    <NavLink to="/Projects" className="page-navigation-item">
                         PROJECTS
                     </NavLink>
-                    <NavLink to="/Contact" className="page-navigation-item">
+                    <NavLink to="/Contact" className="page-navigation-item my-14">
                         CONTACT
                     </NavLink>
                     <a href="https://www.linkedin.com/in/amos-pivato-885b61185/" class="my-14 flex items-center justify-center">

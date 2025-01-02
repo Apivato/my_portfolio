@@ -1,0 +1,26 @@
+import * as React from "react";
+const SVGComponentMyLogo = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 500 500"
+    xmlnsBx="https://boxy-svg.com"
+    {...props}
+  >
+    <defs>
+      <bxGrid x={0.549} y={2.747} width={22.851} height={19.496} />
+      <bxExport>
+        <bxFile format="svg" />
+      </bxExport>
+    </defs>
+    <path
+      d="M 167.934 325.818 L 180.025 295.491 L 273.023 295.491 L 202.195 143.855 L 191.077 143.855 L 78.402 386.472 L 44.341 386.019 L 180.025 113.528 L 213.899 113.528 L 304.229 295.491 L 349.395 295.491 C 383.269 295.491 403.596 280.773 417.681 257.583 C 448.294 207.184 410.093 143.855 349.395 143.855 L 297.439 143.855 L 281.647 113.528 L 349.395 113.528 C 386.55 114.567 420.668 133.507 440.18 163.927 C 484.81 233.501 426.272 325.818 349.395 325.818 L 319.285 325.818 L 349.395 386.472 L 315.521 386.472 L 287.189 325.818 L 167.934 325.818 Z"
+      style={{
+        strokeLinejoin: "round",
+        strokeWidth: 10,
+        fill: "rgb(129, 207, 224)",
+        stroke: "rgb(129, 207, 224)",
+      }}
+    />
+  </svg>
+);
+export default SVGComponentMyLogo;
