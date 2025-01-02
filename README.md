@@ -19,8 +19,9 @@ the source code can be found in Src while the assets used are in the assets dire
 
 # If I had more time I would change this
 
-- I would like to add more creative things to look at, either in the background or in the design of the layout
-- I would change the color pallete to be more pleasing to the eyes and calming
+- add a site map for SEO
+- make sure links have accesible names
+- 
 
 # Available Scripts
 

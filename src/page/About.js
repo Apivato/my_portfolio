@@ -10,7 +10,7 @@ export default class About extends Component {
                 <Navbar/>
                 <div className='body text-[#81CFE0] text-6xl py-10 pl-48'>
                     <div className='header font-bold'>
-                        About me
+                        <h1>About me</h1>
                         <hr className="my-8 mx-16 border-2 border-[#81CFE0]"></hr>
                     </div>
                     <div className='paragraph text-2xl text-left text-[#D2D7D3] px-16'>

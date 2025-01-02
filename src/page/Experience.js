@@ -9,7 +9,7 @@ export default class Experience extends Component {
                 <Navbar/>
                 <div className='body text-[#81CFE0] text-6xl py-10 pl-48'>
                     <div className='header font-bold'>
-                        My experience
+                        <h1>My experience</h1>
                         <hr className="my-8 mx-16 border-2 border-[#81CFE0]"></hr>
                     </div>
                     <div className='grid grid-flow-row-dense grid-cols-2'>

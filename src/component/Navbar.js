@@ -1,33 +1,51 @@
 import { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import MyLogo from '../Assets/logo1.png';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default class Navbar extends Component {
+
+    toggleSideBar() {
+       document.getElementById('sidebar').classList.toggle("invisible"); 
+    }
+    
+
     render(){
         return (
-            <nav className="page-navigation fixed flex flex-col flex-grow h-screen max-h-screen overflow-y-auto bg-[#4D102B] text-[#D2D7D3]">
-                <NavLink to="/" className="page-navigation-header my-9 mx-6" >
-                    <img className="" src={MyLogo} alt="Logo" width="145" height="56" />
-                </NavLink>
-                <NavLink to="/About" className="page-navigation-item my-14 ]">
-                    ABOUT
-                </NavLink>
-                <NavLink to="/Experience" className="page-navigation-item">
-                    EXPERIENCE
-                </NavLink>
-                <NavLink to="/Projects" className="page-navigation-item my-14">
-                    PROJECTS
-                </NavLink>
-                <NavLink to="/Contact" className="page-navigation-item">
-                    CONTACT
-                </NavLink>
-                <a href="https://www.linkedin.com/in/amos-pivato-885b61185/" class="my-14 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
-                        <path d="M24.7612 55.999V28.3354H15.5433V55.999H24.7621H24.7612ZM20.1542 24.5591C23.3679 24.5591 25.3687 22.4348 25.3687 19.7801C25.3086 17.065 23.3679 15 20.2153 15C17.0605 15 15 17.065 15 19.7799C15 22.4346 17.0001 24.5588 20.0938 24.5588H20.1534L20.1542 24.5591ZM29.8633 55.999H39.0805V40.5521C39.0805 39.7264 39.1406 38.8985 39.3841 38.3088C40.0502 36.6562 41.5668 34.9455 44.1138 34.9455C47.4484 34.9455 48.7831 37.4821 48.7831 41.2014V55.999H58V40.1376C58 31.6408 53.4532 27.6869 47.3887 27.6869C42.4167 27.6869 40.233 30.4589 39.0198 32.347H39.0812V28.3364H29.8638C29.9841 30.9316 29.8631 56 29.8631 56L29.8633 55.999Z"
-                        fill="#111827" />
-                    </svg>
-                </a>
-            </nav>
+            <div id='' className='sm: md: lg: xl: 2xl: page-navigation fixed flex flex-col flex-grow h-screen max-h-screen overflow-y-auto transition-all'>
+                <button onClick={this.toggleSideBar} aria-expanded="true" aria-controls="sidebar" class="lg:hidden text-[#81CFE0] active:text-[#65abbb] cursor-pointer rounded">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                </button>
+                <nav id='sidebar' className="invisible lg:visible sm: md: lg: xl: 2xl: page-navigation fixed flex flex-col flex-grow h-screen max-h-screen overflow-y-auto bg-[#4D102B] text-[#D2D7D3]">
+                    <NavLink to="/" className="page-navigation-header my-9 mx-6" >
+                        <img className="w-24 h-15" src={MyLogo} alt="Logo" width="" height="" />
+                    </NavLink>
+                    <NavLink to="/About" className="page-navigation-item my-14 ]">
+                        ABOUT
+                    </NavLink>
+                    <NavLink to="/Experience" className="page-navigation-item">
+                        EXPERIENCE
+                    </NavLink>
+                    <NavLink to="/Projects" className="page-navigation-item my-14">
+                        PROJECTS
+                    </NavLink>
+                    <NavLink to="/Contact" className="page-navigation-item">
+                        CONTACT
+                    </NavLink>
+                    <a href="https://www.linkedin.com/in/amos-pivato-885b61185/" class="my-14 flex items-center justify-center">
+                        <LinkedInIcon/>
+                    </a>
+                    <a href="https://github.com/Apivato" class=" flex items-center justify-center">
+                        <GitHubIcon/>
+                    </a>
+                </nav>
+            </div>
         );
     }
 }
